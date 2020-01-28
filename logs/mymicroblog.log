@@ -22,3 +22,4 @@ AttributeError: 'User' object has no attribute 'follwed_posts'
 2020-01-28 15:57:29,386 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:42]
 2020-01-28 16:05:50,681 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:42]
 2020-01-28 16:08:49,338 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:42]
+2020-01-28 16:24:59,578 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:42]
