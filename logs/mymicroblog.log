@@ -108,3 +108,5 @@ Traceback (most recent call last):
     {% import 'bootstrap/wtf.html' %}
 jinja2.exceptions.TemplateSyntaxError: expected token 'as', got 'end of statement block'
 2020-01-30 16:54:47,288 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:46]
+2020-01-30 17:18:33,320 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:48]
+2020-01-30 17:26:47,158 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:48]
