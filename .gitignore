@@ -1,5 +1,6 @@
 __pycache__
 /venv
 .vscode/
-logs/
-logs/mymicroblog.log
+logs/**.log
+messages.pot
+**.po
