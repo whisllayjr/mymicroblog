@@ -1,4 +1,5 @@
-2020-01-30 21:25:19,312 ERROR: Exception on / [GET] [in /home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask/app.py:1891]
+2020-02-02 15:03:13,375 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:04:06,378 ERROR: Exception on /user/bruno [GET] [in /home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,18 +15,30 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/whisllayjr/Documentos/mymicroblog/app/routes.py", line 36, in index
-    return render_template('index.html', title=_('Home'), form=form,
-  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask_babel/__init__.py", line 552, in gettext
-    t = get_translations()
-  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask_babel/__init__.py", line 227, in get_translations
-    [get_locale()],
-  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask_babel/__init__.py", line 257, in get_locale
-    rv = babel.locale_selector_func()
-  File "/home/whisllayjr/Documentos/mymicroblog/app/__init__.py", line 55, in get_locale
-    return pt
-NameError: name 'pt' is not defined
-2020-01-30 21:25:35,078 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
-2020-01-30 21:26:21,474 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
-2020-01-30 21:49:38,924 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
-2020-01-30 21:50:23,330 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+  File "/home/whisllayjr/Documentos/mymicroblog/app/routes.py", line 94, in user
+    next_url=next_url, prev_url=prev_url)
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/whisllayjr/Documentos/mymicroblog/venv/lib64/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/whisllayjr/Documentos/mymicroblog/app/templates/user.html", line 15, in template
+    <p>{{ _('%(count)d followers', count=user.followers.count()) }}, {{ _('%(count)d following', count=user.followed.count() }}</p>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+2020-02-02 15:07:33,749 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:10:01,543 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:13:49,084 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:15:01,043 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:16:59,046 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
+2020-02-02 15:18:12,490 INFO: Microblog startup [in /home/whisllayjr/Documentos/mymicroblog/app/__init__.py:50]
